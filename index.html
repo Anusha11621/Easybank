@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
     <title>Easy Banking</title>
   </head>
 
 
   <body>
-    <!------------NavBar----------------->
+    <div style="font-family: 'Public Sans', sans-serif;">
+      <!------------NavBar----------------->
     <section class="top-container">
       <div class="upper-head">
         <div class="logo">
@@ -63,7 +67,7 @@
         <img style="width:100%;height: auto;position: relative;margin-top: -10%;" src="./images/image-mockups.png">
        </div>
       <div class="intro">
-        <h1> Next generation<br> digital banking</h1>
+        <p style="font-size:30px;"> Next generation<br> digital banking</p>
         <p class="para">Take your financial life online. Your Easybank account will be a one-stop-shop
           for spending, saving, budgeting, investing, and much more.</p>
         <button class="buttonset">Request Invite</button>
@@ -72,25 +76,25 @@
     <!------------desktop view--------->
     <div class="desktop-intro" id = "desktop">
       <div class="card">
-        <h1 style="font-size:50px;"> Next generation digital banking</h1>
+        <p style="font-size:50px;"> Next generation <br> digital banking</p>
         <p class="para">
-          Take your financial life online. Your Easybank account will be a one-stop-shop
-          for spending, saving, budgeting, investing, and much more.        
+          Take your financial life online. Your Easybank account <br> will be a one-stop-shop
+          for spending, saving, <br> budgeting, investing, and much more.        
         </p>
         <button class="buttonset"> Request Invite</button>
       </div>
       <div class="desktop-img">
         <!-- <img style="width:50vw;height:auto;position: absolute;" src="./images/bg-intro-desktop.svg"> -->
-      <img style="width:100%;height: auto;position: relative;margin-top: -10%;" src="./images/image-mockups.png">
+      <img class="desktop-mockups-image" src="./images/image-mockups.png">
       </div>
     </div>
 
       <!---------why choose us-------------->
     <div class="why-choose-us" id="about">
-      <h2> Why choose Easybank?</h2>
+      <p class="wcu-heading"> Why choose Easybank?</p>
       <p class="para">
-        We leverage Open Banking to turn your bank account into your financial hub. Control
-        your finances like never before.
+        We leverage Open Banking to turn your bank account into your financial hub.
+        Control your finances like never before.
       </p>
 
       <div class="why-choose-us-card">
@@ -133,9 +137,9 @@
     <div id="blog" class="article">
       
       <div class="article-card">
-        <img src="./images/image-currency.jpg">
+        <img class="article-image" src="./images/image-currency.jpg">
         <div class="article-content">
-          <p style="font-size:12px;color:gray;">By Claire Robinson</p>
+          <p class="person">By Claire Robinson</p>
           <h4 class="h4hover"> Receive money in any currency with no fees</h4>
           <p class="para">The world is getting smaller and we’re becoming more mobile. So why should you be
             forced to only receive money in a single …
@@ -144,9 +148,9 @@
       </div>
       <br>
       <div class="article-card">
-        <img src="./images/image-restaurant.jpg">
+        <img class="article-image" src="./images/image-restaurant.jpg">
         <div class="article-content">
-          <p style="font-size:12px;color:gray;">  By Wilson Hutton</p>
+          <p class="person">  By Wilson Hutton</p>
           <h4 class="h4hover"> Treat yourself without worrying about money</h4>
           <p class="para"> Our simple budgeting feature allows you to separate out your spending and set
             realistic limits each month. That means you …            
@@ -155,9 +159,9 @@
       </div>
       <br>
       <div class="article-card">
-        <img src="./images/image-plane.jpg">
+        <img class="article-image" src="./images/image-plane.jpg">
         <div class="article-content">
-          <p style="font-size:12px;color:gray;">  By Wilson Hutton</p>
+          <p class="person">  By Wilson Hutton</p>
           <h4 class="h4hover"> Receive money in any currency with no fees</h4>
           <p class="para"> Take your Easybank card wherever you go
             We want you to enjoy your travels. This is why we don’t charge any fees on purchases
@@ -167,9 +171,9 @@
       </div>
       <br>
       <div class="article-card">
-        <img src="./images/image-confetti.jpg">
+        <img class="article-image" src="./images/image-confetti.jpg">
         <div class="article-content">
-          <p style="font-size:12px;color:gray;">By Claire Robinson</p>
+          <p class="person">By Claire Robinson</p>
           <h4 class="h4hover">  Our invite-only Beta accounts are now live!</h4>
           <p class="para">  After a lot of hard work by the whole team, we’re excited to launch our closed beta.
             It’s easy to request an invite through the site ...
@@ -204,6 +208,7 @@
         <button class="buttonset"> Request Invite</button>
         <p>© Easybank. All Rights Reserved</p>
       </div>
+    </div>
     </div>
   </body>
 </html>
