@@ -1,40 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;1,300;1,400&display=swap');
 body{
     margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Public Sans', sans-serif;;
     font-weight: 400;
 }
+
 .top-container{
     box-shadow: 1px 1px 5px gray;
     background-color: white;
     z-index: 2;
     position:relative;
 }
+
 .upper-head{
     display: flex;
 }
 
 .logo{
     padding: 25px;
-
 }
 
 ul{
     list-style: none;
 }
+
 .menu{
     background-color: rgb(255, 255, 255);
 }
+
 .menu ul li{
     padding: 1rem;
     font-size: 1.5rem;
     color:rgb(75, 75, 75);
     cursor: pointer;
 }
+
 .menu li a{
     text-decoration: none;
     transition: color 0.4s ease;
     color: rgb(146, 146, 146);
 }
+
 .menu li a:hover{
     color: rgb(1, 1, 1);
 }
@@ -44,6 +50,7 @@ top: 0;
 right: 0.4rem;
 z-index: 1;
 }
+
 .menu-wrap .toggler{
     position: absolute;
     top: 0;
@@ -54,6 +61,7 @@ z-index: 1;
     height: 50px;
     opacity: 0;
 }
+
 .menu-wrap .hamburger{
     position: absolute;
     top: 0;
@@ -66,6 +74,7 @@ z-index: 1;
     align-items: center;
     justify-content: center;
 }
+
 .menu-wrap .hamburger>div{
     position: relative;
     width: 50%;
@@ -76,6 +85,7 @@ z-index: 1;
     justify-content: center;
     transition: all 0.4s ease;
 }
+
 .menu-wrap .hamburger>div::before, .menu-wrap .hamburger>div::after{
 content: '';
 position: absolute;
@@ -85,20 +95,25 @@ width: 100%;
 height: 2px;
 background:inherit;
 }
+
 .menu-wrap .hamburger>div::after{
     top:10px;
 }
+
 .menu-wrap .toggler:checked + .hamburger>div{
     transform: rotate(135deg);
 }
+
 .menu-wrap .toggler:checked + .hamburger>div::before,
 .menu-wrap .toggler:checked + .hamburger>div::after{
     top: 0;
     transform: rotate(90deg);
 }
+
 .menu-wrap .toggler:checked:hover + .hamburger>div{
     transform: rotate(225deg);
 }
+
 .menu-wrap .menu{
     position: fixed;
     top: 0;
@@ -109,10 +124,9 @@ background:inherit;
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: center;
-    
-   
+    justify-content: center;   
 }
+
 .menu-wrap .menu>div{
     border-radius: 50%;
     width: 200vw;
@@ -124,6 +138,7 @@ background:inherit;
     transform: scale(0);
     transition: all 0.4s ease;
 }
+
 .menu-wrap .menu>div>div{
     text-align: center;
     max-width: 90vw;
@@ -131,17 +146,21 @@ background:inherit;
     opacity: 0;
     transition: opacity 0.4s ease;
 }
+
 .menu-wrap .toggler:checked ~ .menu{
     visibility: visible;
 }
+
 .menu-wrap .toggler:checked ~ .menu>div{
     transform: scale(1);
     transition-duration: 0.2s;
 }
+
 .menu-wrap .toggler:checked ~ .menu>div>div{
     opacity: 1;
     transition: opacity 0.4s ease;
 }
+
 .nav-desktop{
     display: none;
 }
@@ -150,6 +169,7 @@ a{
     text-decoration: none;
     color: rgb(212, 208, 208);
 }
+
 .button{
     display: none;
 }
@@ -158,6 +178,7 @@ a{
     cursor: pointer;
 }
 
+/* End of Navbar */
 
 
  .buttonset{
@@ -194,6 +215,8 @@ a{
     background-repeat: no-repeat;
     background-size: auto 90%;
 }
+
+/* enf of inro section */
 .para{
     color: gray;
 }
@@ -203,14 +226,18 @@ a{
     background-color: hsl(0, 0%, 98%);
     
 }
+
+.wcu{
+    padding: 20px;
+}
+
+/* enf of why choose us section */  
+
+
 .article-heading{
     text-align: center;
     padding: 25px; 
     font-size: 35px;
-}
-
-.wcu{
-    padding: 20px;
 }
 
 .article{
@@ -233,6 +260,8 @@ a{
     padding: 25px;
 }
 
+/* end of article section */
+
 .footer{
     background-color:  hsl(233, 26%, 24%);
     color: white;
@@ -241,8 +270,12 @@ a{
 }
 .footerimg:hover{
     color: hsl(192, 70%, 51%);
+    opacity: 1;
     cursor: pointer;
 }
+
+/* End of footer */
+
 
 @media(max-width:750px){
     .desktop-intro{
@@ -256,10 +289,7 @@ a{
         height: 30%;
         
     }
-    .why-choose-us-card{
-        display: flex; 
-        gap:20px;
-    }
+    
     .why-choose-us{
         text-align: left;  
     }
